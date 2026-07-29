@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450">
+  <rect width="100%" height="100%" fill="#ffffff" stroke="#e6e6e9" />
+  <text x="24" y="40" font-family="Arial" font-size="18" fill="#111">Med Tracker App (placeholder)</text>
+  <rect x="24" y="60" width="752" height="340" fill="#f6f7fb" stroke="#ddd" />
+  <text x="36" y="120" font-family="Arial" font-size="14" fill="#555">Replace with a screenshot of https://tinyurl.com/JFPortal</text>
+</svg>
