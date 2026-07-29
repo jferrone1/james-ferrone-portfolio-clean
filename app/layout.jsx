@@ -24,10 +24,11 @@ export default function RootLayout({ children }) {
         <title>James Ferrone — Portfolio</title>
       </head>
       <body>
+        <a className="skip-link" href="#main">Skip to content</a>
         <header className="site-header">
           <div className="container">
             <h1>James Ferrone</h1>
-            <nav>
+            <nav aria-label="Primary navigation">
               <a href="#about">About</a>
               <a href="#experience">Experience</a>
               <a href="#projects">Projects</a>
@@ -35,8 +36,8 @@ export default function RootLayout({ children }) {
             </nav>
           </div>
         </header>
-        <main className="container">{children}</main>
-        <footer className="site-footer">© {new Date().getFullYear()} James Ferrone</footer>
+        <main id="main" className="container" tabIndex={-1}>{children}</main>
+        <footer className="site-footer" role="contentinfo">© {new Date().getFullYear()} James Ferrone</footer>
       </body>
     </html>
   )

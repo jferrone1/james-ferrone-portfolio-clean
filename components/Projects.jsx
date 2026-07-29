@@ -22,10 +22,15 @@ export default function Projects() {
   return (
     <div className="projects-grid">
       {projects.map(p => (
-        <div key={p.url} className="project-card">
-          <h4><a href={p.url} target="_blank" rel="noreferrer">{p.title}</a></h4>
-          <p>{p.desc}</p>
-        </div>
+        <figure key={p.url} className="project-card">
+          <a href={p.url} target="_blank" rel="noreferrer" aria-label={`Open ${p.title} in new tab`}>
+            <img src={`/screenshots/${p.title.toLowerCase().replace(/\s+/g,'-')}.png`} alt={`${p.title} screenshot`} onError={(e)=>{ e.target.src='/screenshots/'+p.title.toLowerCase().replace(/\s+/g,'-')+'.svg' }} />
+          </a>
+          <figcaption>
+            <h4><a href={p.url} target="_blank" rel="noreferrer">{p.title}</a></h4>
+            <p>{p.desc}</p>
+          </figcaption>
+        </figure>
       ))}
     </div>
   )
