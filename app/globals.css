@@ -15,6 +15,7 @@ html,body{padding:0;margin:0;font-family:Inter, system-ui, -apple-system, 'Segoe
 .project-card img{width:100%;height:auto;border-radius:4px}
 .project-card figcaption{margin-bottom:8px}
 .project-card img.crop-half{height:140px;object-fit:cover;object-position:top;border-radius:4px}
+.project-card img.crop-top{height:140px;object-fit:cover;object-position:top;border-radius:4px}
 .actions{margin-bottom:12px}
 button{background:#0b5fff;color:#fff;border:none;padding:8px 12px;border-radius:4px}
 button:focus{outline:3px solid #0b5fff}

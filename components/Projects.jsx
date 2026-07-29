@@ -5,9 +5,10 @@ const projects = [
   {
     title: 'Stroke Training App',
     url: 'https://stop-stroke-fast.base44.app/',
-    desc: 'Interactive web app to educate about stroke recognition and response.',
+    desc: 'Interactive web app to educate about stroke recognition.',
     image: 'stroke-app'
   },
+
   {
     title: 'Stroke Awareness Training Video',
     url: 'https://tinyurl.com/JFStrokeTraining',
@@ -32,7 +33,7 @@ export default function Projects() {
             <p>{p.desc}</p>
           </figcaption>
           <a href={p.url} target="_blank" rel="noreferrer" aria-label={`Open ${p.title} in new tab`}>
-            <img className={p.image === 'med-tracker' ? 'crop-half' : ''} src={`/screenshots/${p.image}.png`} alt={`${p.title} screenshot`} onError={(e)=>{ e.target.src=`/screenshots/${p.image}.svg` }} />
+            <img className={p.image === 'med-tracker' ? 'crop-half' : p.image === 'stroke-app' ? 'crop-top' : ''} src={`/screenshots/${p.image}.png`} alt={`${p.title} screenshot`} onError={(e)=>{ e.target.src=`/screenshots/${p.image}.svg` }} />
           </a>
         </figure>
       ))}
