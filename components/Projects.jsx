@@ -27,13 +27,13 @@ export default function Projects() {
     <div className="projects-grid">
       {projects.map(p => (
         <figure key={p.url} className="project-card">
-          <a href={p.url} target="_blank" rel="noreferrer" aria-label={`Open ${p.title} in new tab`}>
-            <img src={`/screenshots/${p.image}.png`} alt={`${p.title} screenshot`} onError={(e)=>{ e.target.src=`/screenshots/${p.image}.svg` }} />
-          </a>
           <figcaption>
             <h4><a href={p.url} target="_blank" rel="noreferrer">{p.title}</a></h4>
             <p>{p.desc}</p>
           </figcaption>
+          <a href={p.url} target="_blank" rel="noreferrer" aria-label={`Open ${p.title} in new tab`}>
+            <img className={p.image === 'med-tracker' ? 'crop-half' : ''} src={`/screenshots/${p.image}.png`} alt={`${p.title} screenshot`} onError={(e)=>{ e.target.src=`/screenshots/${p.image}.svg` }} />
+          </a>
         </figure>
       ))}
     </div>
