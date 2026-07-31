@@ -6,6 +6,7 @@ html,body{padding:0;margin:0;font-family:Inter, system-ui, -apple-system, 'Segoe
 .skip-link:focus{position:fixed;left:16px;top:12px;width:auto;height:auto;background:#fff;padding:8px;border:2px solid #0b5fff;border-radius:4px;color:#0b5fff;z-index:1000}
 .site-header{background:linear-gradient(90deg,#eef2ff 0%, #fef6ff 100%);border-bottom:1px solid rgba(14,16,25,0.06);padding:18px 0;box-shadow:0 6px 18px rgba(15,23,36,0.04);backdrop-filter:saturate(120%);}
 .site-header h1{margin:0;display:inline-block}
+.header-contact{color:var(--muted);font-size:0.95rem;margin-top:6px}
 .site-header nav{display:inline-block;float:right}
 .site-header nav a{margin-left:16px;color:var(--muted);text-decoration:none}
 .site-header nav a:focus{outline:3px solid #0b5fff}
