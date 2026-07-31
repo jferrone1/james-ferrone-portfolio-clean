@@ -27,9 +27,9 @@ export default function RootLayout({ children }) {
         <a className="skip-link" href="#main">Skip to content</a>
         <header className="site-header">
           <div className="container">
-            <div style={{display:'flex',flexDirection:'column'}}>
+            <div style={{display:'flex',flexDirection:'column',alignItems:'flex-start'}}>
               <h1 style={{margin:0}}>James Ferrone</h1>
-              <div className="header-contact"> <a href="mailto:Jferrone1@gmail.com">Jferrone1@gmail.com</a> · 908-319-2930 </div>
+              <div className="header-contact"><a href="mailto:Jferrone1@gmail.com">Jferrone1@gmail.com</a></div>
             </div>
             <nav aria-label="Primary navigation">
               <a href="#about">About</a>
