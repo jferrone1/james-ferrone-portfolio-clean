@@ -39,6 +39,7 @@ export default function RootLayout({ children }) {
             </nav>
           </div>
         </header>
+        <div className="hero"><img src="/banner.svg" className="hero-banner" alt="Decorative abstract banner" /></div>
         <main id="main" className="container" tabIndex={-1}>{children}</main>
         <footer className="site-footer" role="contentinfo">© {new Date().getFullYear()} James Ferrone</footer>
       </body>
