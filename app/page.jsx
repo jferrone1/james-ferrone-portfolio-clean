@@ -22,6 +22,7 @@ export default function Page() {
       <section id="contact">
         <h2>Contact</h2>
         <p>Flemington, NJ · 908-319-2930 · <a href="mailto:Jferrone1@gmail.com">Jferrone1@gmail.com</a></p>
+        <p style={{fontSize:'0.9rem',marginTop:'12px'}}>© {new Date().getFullYear()} James Ferrone</p>
       </section>
     </>
   )

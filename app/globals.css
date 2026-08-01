@@ -23,7 +23,6 @@ html,body{padding:0;margin:0;font-family:Inter, system-ui, -apple-system, 'Segoe
 button{background:linear-gradient(90deg,var(--accent),#0058ff);color:#fff;border:none;padding:10px 14px;border-radius:10px;box-shadow:0 6px 18px rgba(124,92,255,0.12);cursor:pointer;transition:transform .12s ease,box-shadow .12s ease}
 button:hover{transform:translateY(-2px);box-shadow:0 12px 28px rgba(124,92,255,0.14)}
 button:focus{outline:3px solid #0b5fff}
-.site-footer{background:linear-gradient(90deg,#f0ebf8 0%, #faf6ff 100%);text-align:center;padding:28px 16px;color:var(--muted);border-top:1px solid rgba(124,92,255,0.08);width:100vw;position:relative;left:50%;right:50%;margin-left:-50vw;margin-right:-50vw}
 #contact{background:linear-gradient(90deg,#f0ebf8 0%, #faf6ff 100%);padding:24px 16px;width:100vw;position:relative;left:50%;right:50%;margin-left:-50vw;margin-right:-50vw;border-top:1px solid rgba(124,92,255,0.08);text-align:center}
 .project-card:hover{transform:translateY(-6px);box-shadow:0 20px 40px rgba(124,92,255,0.08)}
 a{color:var(--accent);text-decoration:none}
