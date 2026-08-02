@@ -4,7 +4,7 @@ import React from 'react'
 const projects = [
   {
     title: 'Stroke Training App',
-    url: 'https://stop-stroke-fast.base44.app/',
+    url: 'https://stroke-awareness-training.base44.app',
     desc: 'Interactive web app to educate about stroke recognition.',
     image: 'stroke-app'
   },
